@@ -12,7 +12,7 @@ class HasManagedEnumTest < ActiveSupport::TestCase
 	end
 	
 	def test_person_possible_status_values
-		statuses = %w(employed self-employed entrepreneur unemployed)
+		statuses = %w(employed self_employed entrepreneur unemployed)
 		assert_equal statuses, Person.status_possible_keyvalues
 	end
 	
@@ -24,7 +24,7 @@ class HasManagedEnumTest < ActiveSupport::TestCase
 	end
 	
 	def test_person_age_phase
-		statuses = %w(employed self-employed entrepreneur unemployed)
+		statuses = %w(employed self_employed entrepreneur unemployed)
 		statuses.each do |status|
 			assert_equal status, Person.send(status.upcase)
 		end
