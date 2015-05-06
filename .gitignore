@@ -1,5 +1,6 @@
 .bundle/
 .project
+managed_enum-*.gem
 log/*.log
 pkg/
 test/dummy/db/*.sqlite3
