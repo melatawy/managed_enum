@@ -46,6 +46,12 @@ Person.EMPLOYED
 Person.SELF_EMPLOYED
 # => "self_employed"
 
+Person.age_phase_baby.all
+# => Person Load (0.2ms)  SELECT "people".* FROM "people" WHERE "people"."age_phase" = 10
+
+Person.status_employed.all
+# => Person Load (0.2ms)  SELECT "people".* FROM "people" WHERE "people"."status" = "employed"
+ 
 # INSTANCE METHODS
 person = Person.new
 
