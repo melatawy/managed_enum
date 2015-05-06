@@ -62,6 +62,7 @@ person.make_employed
 # => "employed"
 person.employed?
 # => returns true
+```
 
 ## Contribution
 Feel free to contribute for upward compatibility, better coding style or adding functionality. 
