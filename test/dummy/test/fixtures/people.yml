@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  age_phase: 1
+  status: 1
+
+two:
+  name: 
+  age_phase: 1
+  status: 1
