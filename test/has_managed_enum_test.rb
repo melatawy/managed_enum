@@ -36,6 +36,7 @@ class HasManagedEnumTest < ActiveSupport::TestCase
 		person.make_baby
 		assert_equal true, person.baby?
 		assert_equal 10, person.age_phase
+		assert_equal 'baby', person.age_phase_as_string
 	end
 	
 	def test_a_person_should_become_an_unemployed
@@ -44,5 +45,6 @@ class HasManagedEnumTest < ActiveSupport::TestCase
 		person.make_unemployed
 		assert_equal true, person.unemployed?
 		assert_equal 'unemployed', person.status
+		assert_equal 'unemployed', person.status_as_string
 	end
 end
