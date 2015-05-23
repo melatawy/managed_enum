@@ -61,6 +61,10 @@ person.make_baby
 # => 10
 person.baby?
 # => returns true
+person.age_phase
+# => returns 10
+person.age_phase_as_string
+# => returns "baby"
 
 person.employed?
 # => returns false
@@ -68,6 +72,10 @@ person.make_employed
 # => "employed"
 person.employed?
 # => returns true
+person.status
+# => returns "employed"
+person.status_as_string
+# => returns "employed"
 ```
 
 ## Contribution
